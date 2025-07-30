@@ -12,10 +12,15 @@
   margin: 0;
 }
 
+body{
+  overflow-x: clip;
+}
 header {
   width: 100vw;
   height: 100vh;
   background-image: url(../assets/header-img.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   overflow-x: hidden;
   padding: 21px 93px;
   position: relative;
@@ -159,12 +164,18 @@ nav p :last-child:hover {
   outline: 0;
 }
 
-.hero-section {
-  margin: auto 0;
-  padding: 82px 93px;
-  display: flex;
-  justify-content: space-between;
+section{
+  display: grid;
+  justify-items: center;
   align-items: center;
+  width: 82%;
+  justify-self: center;
+}
+
+.hero-section {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .hero-text {
   width: 585px;
@@ -199,43 +210,56 @@ nav p :last-child:hover {
 }
 .coffe-blast {
   position: relative;
-  left: -100px;
-  bottom: 100px;
+  left: 0;
+  bottom: 150px;
+  width: fit-content;
+  height: fit-content;
 }
 
 .coffee-style {
-  margin: auto 0;
-  padding: 82px 93px;
-  align-items: center;
-  text-align: center;
+  margin-top: -12rem;
 }
+
 .coffee-style-text h2 {
   font-family: var(--font-Primary);
   font-weight: 700;
   font-size: 54px;
   font-style: bold;
-  color: #603809;
+  color: var(--color-Primary);
+  text-align: center;
 }
 .coffee-style-text p {
   font-family: var(--font-Primary);
+  text-align: center;
   font-size: 20px;
-  font-weight: 400;
-  font-style: regular;
   color: #707070;
   margin: 16px 0;
   line-height: 34px;
 }
 .coffee-style-items {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 20px;
+}
+
+.coffee-style-items div {
+  background-color: #FFF9F1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.coffee-style-items img {
+  width: 280px;
+  height: 222px;
 }
 .coffee-style-items h4 {
   font-family: var(--font-Primary);
   font-weight: 700;
   font-size: 22px;
   color: #603809;
+  text-align: center;
 }
 .coffee-style-items p {
   font-family: var(--font-Primary);
@@ -249,6 +273,7 @@ nav p :last-child:hover {
   font-weight: 700;
   font-size: 16px;
   color: #603809;
+  text-align: center;
 }
 .coffee-style-items button {
   background-color: var(--color-Secondary);
@@ -258,20 +283,103 @@ nav p :last-child:hover {
   height: 48px;
   border-radius: 24px;
   border: none;
+  position: relative;
   outline: none;
   margin-top: 18px;
+  top: 20px;
 }
-.first {
-  width: 280px;
-  height: 284px;
+
+.coffee-style-text-2{
+  margin-top: 4rem;
+}
+
+.coffee-style-text-2 p{
+  font-family: var(--font-Primary);
+  text-align: center;
+  font-size: 20px;
+  color: #707070;
+  margin: 16px 0;
+  line-height: 34px;
+}
+.coffee-style-text-2 h2{
+  font-family: var(--font-Primary);
+  font-weight: 700;
+  font-size: 54px;
+  font-style: bold;
+  color: var(--color-Primary);
+  text-align: center;
+}
+
+.coffee-style-items-2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.coffe-blast-2 {
+  position: absolute;
+  right: -80px;
+  width: fit-content;
+  height: fit-content;
+  transform: rotate(180deg);
+}
+
+.coffe-blast-2 img{
+  width: 478px;
+  height: 261px;
+}
+
+.coffee-style-2{
+  margin-top: 6rem;
+}
+
+.coffee-style-items-2 h4 {
+  font-family: var(--font-Primary);
+  font-weight: 700;
+  font-size: 22px;
+  color: #603809;
+  text-align: center;
+}
+
+.second img{
+  width: 88px;
+  height: 88px;
+}
+
+.second p{
+  font-family: var(--font-Primary);
+  text-align: center;
+  font-size: 20px;
+  color: #707070;
+  margin: 0;
+  width: 176px;
+  height: 54px;
+}
+
+.second:hover {
   background: #ffeed8;
-  padding: 60px 0;
 }
 .second {
+  padding: 60px 0;
+  gap: 1rem;
   width: 280px;
   height: 284px;
-  background: #faf2e7;
+  background:  #FFF9F1;
   padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.text {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 .text h4 {
   font-family: var(--font-Primary);
