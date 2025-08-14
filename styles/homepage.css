@@ -1875,7 +1875,7 @@ span {
 
 @media screen and (max-width: 500px) {
   header{
-    height: 80dvh;
+    height: 60dvh;
   }
   nav ul {
     display: flex;
@@ -2145,7 +2145,7 @@ span {
     margin-top: 4rem;
   }
   .feedback h2 {
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .feedback p {
@@ -2205,7 +2205,7 @@ span {
     height: 70px;
   }
   footer{
-    margin-top: 0rem;
+    margin-top: -5rem;
   }
   .footer-top {
     gap: 0.4rem;
@@ -2233,6 +2233,14 @@ span {
     width: 70px;
     height: 40px;
   }
+
+  .wing-right {
+    margin-top: -115px;
+  }
+
+  .wing-left {
+    margin-top: -115px;
+}
 
   .wing-left img, .wing-right img {
     height: 6rem;
